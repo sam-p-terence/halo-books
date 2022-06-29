@@ -2,3 +2,12 @@
     background-image: url("https://cdn.mos.cms.futurecdn.net/X64qcQxxnkENkZY7d2DBvZ.jpg");
     background-image: rgba(51, 170, 51, .1) ;
 }
+
+div {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-spacing: 10px;
+  }
