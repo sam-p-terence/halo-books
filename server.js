@@ -20,12 +20,37 @@ rollbar.log("WTF IS THIS SHIT MAN")
 
 
 
-rollbar.info('Students List Requested')
+    rollbar.info('Students List Requested')
     rollbar.error('stuff is going wrong')
     rollbar.critical('everything is on fire')
     rollbar.warning('jk')
     res.status(200).send(students)
-
+//
+    try {
+        nonExistentFunction();
+      } catch (error) {
+        rollbar.info('catch try error')
+      }
+    
+    try {
+        nonExistentFunction2();
+      } catch (error) {
+        rollbar.warning('Warning Warning Warning')
+      }
+    
+    try {
+        nonExistentFunction3();
+      } catch (error) {
+        rollbar.error('Error Error Error')
+      }
+    
+    try {
+        nonExistentFunction4();
+      } catch (error) {
+        rollbar.critical('explosion')
+      }
+    
+//
 try {blah()}
 catch (error) {
     rollbar.error(error)
