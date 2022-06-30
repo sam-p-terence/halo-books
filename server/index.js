@@ -20,6 +20,29 @@ rollbar.log("arghh")
 rollbar.log(":(((")
 
 
+
+
+
+// const students = ['Jimmy', 'Timothy', 'Jimothy']
+
+// app.get('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, '/index.html'))
+// })
+
+// app.get('/api/students', (req, res) => {
+//     rollbar.info('Students List Requested')
+//     rollbar.error('stuff is going wrong')
+//     rollbar.critical('everything is on fire')
+//     rollbar.warning('jk')
+//     res.status(200).send(students)
+// })
+
+try {blah()}
+catch (error) {
+    rollbar.error(error)
+}
+
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
 })
