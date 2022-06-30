@@ -1,5 +1,5 @@
 
-
+aler('hi')
 
 const bigButton = document.querySelector('#iNeedWeapon')
 

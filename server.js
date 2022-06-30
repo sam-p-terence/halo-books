@@ -50,6 +50,10 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.js'))
 })
 
+app.get('/get-jareds-name', (req, res) => {
+    res.send('jared')
+})
+
 const port = process.env.PORT || 4005
 
 app.listen(port, () => {
