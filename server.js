@@ -20,12 +20,12 @@ rollbar.log("WTF IS THIS SHIT MAN")
 
 
 
-    rollbar.info('Students List Requested')
-    rollbar.error('stuff is going wrong')
-    rollbar.critical('everything is on fire')
-    rollbar.warning('jk')
-    res.status(200).send(students)
-//
+//     rollbar.info('Students List Requested')
+//     rollbar.error('stuff is going wrong')
+//     rollbar.critical('everything is on fire')
+//     rollbar.warning('jk')
+//     res.status(200).send(students)
+// //
     try {
         nonExistentFunction();
       } catch (error) {
