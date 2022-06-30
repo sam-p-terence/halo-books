@@ -28,6 +28,11 @@ app.get('/api/students', (req, res) => {
     res.status(200).send(students)
 })
 
+try{blach()}
+catch (catch){
+    rollbar.error(error)
+}
+
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.html'))
