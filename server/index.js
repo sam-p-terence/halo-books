@@ -15,23 +15,9 @@ var rollbar = new Rollbar({
 
 // record a generic message and send it to Rollbar
 rollbar.log("Hello world!");
-
-
-const students = ['Jimmy', 'Timothy', 'Jimothy']
-
-
-app.get('/api/students', (req, res) => {
-    rollbar.info('Students List Requested')
-    rollbar.error('stuff is going wrong')
-    rollbar.critical('everything is on fire')
-    rollbar.warning('jk')
-    res.status(200).send(students)
-})
-
-try{blach()}
-catch (catch){
-    rollbar.error(error)
-}
+rollbar.log("WTF IS THIS SHIT MAN")
+rollbar.log("arghh")
+rollbar.log(":(((")
 
 
 app.get('/', (req, res) => {
