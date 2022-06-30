@@ -18,9 +18,6 @@ rollbar.log("WTF IS THIS SHIT MAN")
 
 
 
-
-
-
 // const students = ['Jimmy', 'Timothy', 'Jimothy']
 
 // app.get('/', (req, res) => {
