@@ -1,3 +1,6 @@
+
+
+
 const bigButton = document.querySelector('#iNeedWeapon')
 
 const message = () => {
