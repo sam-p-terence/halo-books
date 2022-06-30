@@ -1,7 +1,9 @@
 const express = require('express')
 const path = require('path')
+const cors = require('cors')
 
 const app = express()
+app.use(cors())
 
 
 
@@ -18,19 +20,7 @@ rollbar.log("WTF IS THIS SHIT MAN")
 
 
 
-// const students = ['Jimmy', 'Timothy', 'Jimothy']
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/index.html'))
-// })
-
-// app.get('/api/students', (req, res) => {
-//     rollbar.info('Students List Requested')
-//     rollbar.error('stuff is going wrong')
-//     rollbar.critical('everything is on fire')
-//     rollbar.warning('jk')
-//     res.status(200).send(students)
-// })
 
 try {blah()}
 catch (error) {
@@ -50,11 +40,8 @@ app.get('/js', (req, res) => {
     res.sendFile(path.join(__dirname, '../index.js'))
 })
 
-app.get('/get-jareds-name', (req, res) => {
-    res.send('jared')
-})
 
-const port = process.env.PORT || 4005
+const port = process.env.PORT || 4004
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`)
